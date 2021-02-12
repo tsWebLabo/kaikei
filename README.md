@@ -139,6 +139,49 @@
 
 ---
 
+## データベース設計
+
+### データベース定義
+
+|||
+|:---|:---|
+|システム名|会計ソフト|
+|Author|t's Web Labo|
+|DB名|kaikei.db|
+|DB種類|SQLite3|
+
+### テーブル定義
+
+- 勘定科目テーブル
+
+|||
+|:---|:---|
+|テーブル名|kanjoukamoku|
+
+|No.|項目名（日本語）|項目名（英語）|データ型|桁数|主キー|NotNull|備考|
+|:---|:---|:---|:---|:---|:---|:---|:---|
+|1|勘定科目ID|kanjouID|INTEGER||○|○||
+|2|勘定科目名|kanjouName|TEXT|||||
+
+- 仕訳帳テーブル
+
+|||
+|:---|:---|
+|テーブル名|shiwakechou|
+
+|No.|項目名（日本語）|項目名（英語）|データ型|桁数|主キー|NotNull|備考|
+|:---|:---|:---|:---|:---|:---|:---|:---|
+|1|仕訳帳ID|shiwakechouID|INTEGER||○|○||
+|2|日付|date|DATE|||||
+|3|借方科目ID|karikataKamokuID|INTEGER||||勘定科目テーブル/勘定科目IDとリレーション|
+|4|借方金額|karikataKingaku|INTEGER|||||
+|5|貸方科目ID|kashikataKamokuID|INTEGER||||勘定科目テーブル/勘定科目IDとリレーション|
+|6|貸方金額|kashikataKingaku|INTEGER|||||
+|7|摘要|tekiyou|TEXT|||||
+
+
+---
+
 ## 用語解説
 
 |用語|解説|
