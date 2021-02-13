@@ -1,8 +1,35 @@
 body {
   padding: 50px;
+  background-color: #eee;
+  color: #333;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+/* index.pugのstyle */
+.login {
+  margin-top: 30vh;
+  text-align: center;
+}
+
+.loginTitle {
+  font-size: 80px;
+}
+
+.loginPass {
+  font-size: xx-large;
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.loginButton {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 50px;
 }
