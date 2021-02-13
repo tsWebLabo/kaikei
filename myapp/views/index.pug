@@ -1,5 +1,7 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div.login
+    h1.loginTitle= title
+    input.loginPass(type="password", name="", hint="パスワード")
+    a(href="http://localhost:3000/mainMenu"): input.loginButton(type="button", value="LOG IN")
