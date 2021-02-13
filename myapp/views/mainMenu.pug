@@ -1,0 +1,21 @@
+extends layout 
+
+block content 
+  h1= title + "：メニュー画面" 
+  div.btnMenu
+    div.btnColumn 
+      input.btnCell(type="button", value="button01")
+      input.btnCell(type="button", value="button02")
+      input.btnCell(type="button", value="button03")
+      input.btnCell(type="button", value="button04")
+    div.btnColumn
+      input.btnCell(type="button", value="button05")
+      input.btnCell(type="button", value="button06")
+      input.btnCell(type="button", value="button07")
+      input.btnCell(type="button", value="button08")
+    div.btnColumn 
+      input.btnCell(type="button", value="button09")
+      input.btnCell(type="button", value="button10")
+      input.btnCell(type="button", value="button11")
+      a(href="http://localhost:3000"): input.btnCell(type="button", value="LOG OUT")
+    
